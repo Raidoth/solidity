@@ -1,0 +1,83 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createToken",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"category","type":"string"},
+				{"name":"description","type":"string"},
+				{"name":"countUniqPlayerLastMonth","type":"uint256"},
+				{"name":"avgPlayerDay","type":"uint256"},
+				{"name":"countAllPlayers","type":"uint256"},
+				{"name":"costBuyGame","type":"uint256"},
+				{"name":"sellPrice","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTokenOwner",
+			"inputs": [
+				{"name":"idToken","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getToken",
+			"inputs": [
+				{"name":"idToken","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"name","type":"string"},
+				{"name":"category","type":"string"},
+				{"name":"description","type":"string"},
+				{"name":"countUniqPlayerLastMonth","type":"uint256"},
+				{"name":"avgPlayerDay","type":"uint256"},
+				{"name":"countAllPlayers","type":"uint256"},
+				{"name":"costBuyGame","type":"uint256"},
+				{"name":"sellPrice","type":"uint256"}
+			]
+		},
+		{
+			"name": "ChangeTokenOwner",
+			"inputs": [
+				{"name":"idToken","type":"uint256"},
+				{"name":"NewOwner","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "NomSellToken",
+			"inputs": [
+				{"name":"idToken","type":"uint256"},
+				{"name":"sellPrice","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"category","type":"string"},{"name":"description","type":"string"},{"name":"countUniqPlayerLastMonth","type":"uint256"},{"name":"avgPlayerDay","type":"uint256"},{"name":"countAllPlayers","type":"uint256"},{"name":"costBuyGame","type":"uint256"},{"name":"sellPrice","type":"uint256"}],"name":"tokenArray","type":"tuple[]"},
+		{"name":"tokenOwner","type":"map(uint256,uint256)"}
+	]
+}

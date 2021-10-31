@@ -1,0 +1,134 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "setAttck",
+			"inputs": [
+				{"name":"_pAtk","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttck",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "deathBase",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attackEnemy",
+			"inputs": [
+				{"name":"enemy","type":"address"},
+				{"name":"power","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getBaseEnemy",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "setClass",
+			"inputs": [
+				{"name":"_class","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getClass",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint8"}
+			]
+		},
+		{
+			"name": "setHP",
+			"inputs": [
+				{"name":"hp","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setDef",
+			"inputs": [
+				{"name":"Def","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"damage","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAddresAttackEnemy",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "getHp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getDef",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"healthPoint","type":"int256"},
+		{"name":"pDef","type":"int256"},
+		{"name":"class","type":"uint8"},
+		{"name":"enemyAddress","type":"address"},
+		{"name":"baseAddress","type":"address"},
+		{"name":"base","type":"address"},
+		{"name":"pAtk","type":"int256"}
+	]
+}

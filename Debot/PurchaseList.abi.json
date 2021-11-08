@@ -1,0 +1,60 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"pubkey","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createPurchases",
+			"inputs": [
+				{"name":"name","type":"bytes"},
+				{"name":"count","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "infoPurchases",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"paid","type":"uint256"},{"name":"noPaid","type":"uint256"},{"name":"allPrice","type":"uint256"},{"name":"allCount","type":"uint256"}],"name":"purchasesSumm","type":"tuple"}
+			]
+		},
+		{
+			"name": "deletePurchases",
+			"inputs": [
+				{"name":"id","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "listPurchases",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"id","type":"uint256"},{"name":"name","type":"bytes"},{"name":"count","type":"uint256"},{"name":"timestamp","type":"uint32"},{"name":"isBought","type":"bool"},{"name":"price","type":"uint256"}],"name":"purchasesList","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "buyById",
+			"inputs": [
+				{"name":"id","type":"uint256"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
